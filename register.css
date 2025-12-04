@@ -1,0 +1,94 @@
+﻿.form-section {
+  background: linear-gradient(
+    135deg,
+    rgba(14, 165, 233, 0.08) 0%,
+    rgba(99, 102, 241, 0.08) 100%
+  );
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  border: 1px solid var(--card-border-light);
+}
+.form-section .form-group {
+  margin-bottom: 1.5rem;
+}
+.form-section .form-label {
+  color: var(--text-main);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+.form-section .form-control,
+.form-section .form-select {
+  border: 1px solid var(--card-border-light);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  color: var(--text-main);
+  background-color: white;
+  transition: all 0.3s ease;
+}
+.form-section .form-control:focus,
+.form-section .form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(14, 165, 233, 0.15);
+  background-color: white;
+}
+.form-section textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+.form-section .form-check {
+  padding-left: 1.75rem;
+}
+.form-section .form-check-input {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid var(--card-border-light);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.form-section .form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.form-section .btn-primary {
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+.form-section .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(14, 165, 233, 0.3);
+}
+.contact-info {
+  background: var(--card-bg-light);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  border: 1px solid var(--card-border-light);
+  transition: all 0.3s ease;
+}
+.contact-info:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 30px rgba(14, 165, 233, 0.15);
+  transform: translateY(-5px);
+}
+.contact-info h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.contact-info p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+.contact-info a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}

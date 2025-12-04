@@ -1,0 +1,144 @@
+﻿
+.portfolio-card {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--card-bg-light);
+    border: 1px solid var(--card-border-light);
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: slideInUp 0.6s ease-out forwards;
+}
+.portfolio-card:nth-child(1) { animation-delay: 0.1s; }
+.portfolio-card:nth-child(2) { animation-delay: 0.2s; }
+.portfolio-card:nth-child(3) { animation-delay: 0.3s; }
+.portfolio-card:nth-child(4) { animation-delay: 0.4s; }
+.portfolio-card:nth-child(5) { animation-delay: 0.5s; }
+.portfolio-card:nth-child(6) { animation-delay: 0.6s; }
+.portfolio-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.15);
+    transform: translateY(-5px);
+}
+.portfolio-card .portfolio-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.portfolio-card .portfolio-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: shimmer 3s infinite;
+}
+.portfolio-card .portfolio-header h4 {
+    position: relative;
+    z-index: 1;
+    font-size: 1.3rem;
+}
+.portfolio-card .portfolio-body {
+    padding: 1.5rem;
+}
+.portfolio-card .portfolio-body h3 {
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.portfolio-card .portfolio-body h5 {
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.portfolio-card .portfolio-body p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.portfolio-card .stats-inline {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--card-border-light);
+}
+.portfolio-card .stat-item {
+    text-align: center;
+}
+.portfolio-card .stat-item strong {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+.portfolio-card .stat-item small {
+    display: block;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+}
+.portfolio-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Stats Section */
+.stats-box {
+    background: var(--card-bg-light);
+    border-radius: var(--radius-lg);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border: 1px solid var(--card-border-light);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.stats-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.stats-box:hover::before {
+    transform: scaleX(1);
+}
+.stats-box:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.15);
+    transform: translateY(-5px);
+}
+.stats-box div {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-secondary);
+}
+.stats-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: countUp 0.6s ease-out;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+}

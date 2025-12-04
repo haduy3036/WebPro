@@ -1,0 +1,151 @@
+﻿
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    background: var(--card-bg-light);
+    border: 1px solid var(--card-border-light);
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: slideInUp 0.6s ease-out forwards;
+}
+.benefit-item:nth-child(1) { animation-delay: 0.1s; }
+.benefit-item:nth-child(2) { animation-delay: 0.2s; }
+.benefit-item:nth-child(3) { animation-delay: 0.3s; }
+.benefit-item:nth-child(4) { animation-delay: 0.4s; }
+.benefit-item:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.1);
+    transform: translateY(-3px);
+}
+.benefit-item .icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+.benefit-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.benefit-item p {
+    color: var(--text-secondary);
+    margin: 0;
+    font-size: 0.95rem;
+}
+.testimonial-card {
+    background: var(--card-bg-light);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    border: 1px solid var(--card-border-light);
+    text-align: center;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: slideInUp 0.6s ease-out forwards;
+}
+.testimonial-card:nth-child(1) { animation-delay: 0.1s; }
+.testimonial-card:nth-child(2) { animation-delay: 0.2s; }
+.testimonial-card:nth-child(3) { animation-delay: 0.3s; }
+.testimonial-card:nth-child(4) { animation-delay: 0.4s; }
+.testimonial-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.15);
+    transform: translateY(-5px);
+}
+.testimonial-card .testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.testimonial-card h4 {
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.testimonial-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+.testimonial-card .rating {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+.feature-item {
+    padding: 1.5rem;
+    background: var(--card-bg-light);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--card-border-light);
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: slideInUp 0.6s ease-out forwards;
+}
+.feature-item:nth-child(1) { animation-delay: 0.1s; }
+.feature-item:nth-child(2) { animation-delay: 0.2s; }
+.feature-item:nth-child(3) { animation-delay: 0.3s; }
+.feature-item:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.1);
+    transform: translateY(-3px);
+}
+.feature-item .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.feature-item h4 {
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.feature-item p {
+    color: var(--text-secondary);
+    margin: 0;
+    font-size: 0.9rem;
+}
+.contact-info {
+    background: var(--card-bg-light);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    border: 1px solid var(--card-border-light);
+    transition: all 0.3s ease;
+}
+.contact-info:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.15);
+    transform: translateY(-5px);
+}
+.contact-info h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+.contact-info p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}

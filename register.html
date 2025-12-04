@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Ký Tư Vấn - Thiết Kế Website Chuyên Nghiệp</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">WebPro</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Trang Chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Dịch Vụ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary ms-3" href="register.html"
+                >Liên Hệ Ngay</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Registration Form Section -->
+    <section
+      id="register"
+      class="form-section form-section-bg"
+      style="min-height: 100vh; display: flex; align-items: center"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center mb-5">
+              <h1 class="display-5 fw-bold mb-3">
+                Đăng Ký Ngay Để Nhận Ưu Đãi
+              </h1>
+              <p class="lead">Miễn phí tư vấn - Báo giá trong 24h</p>
+              <p class="text-muted">
+                Hãy chia sẻ thông tin chi tiết để chúng tôi có thể giúp bạn tốt
+                nhất
+              </p>
+            </div>
+            <div class="form-container">
+              <form id="registrationForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Họ và tên *</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Nguyễn Văn A"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Số điện thoại *</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="0901234567"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Email *</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="email@example.com"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label"
+                      >Loại website cần thiết kế *</label
+                    >
+                    <select class="form-select" required>
+                      <option value="">-- Chọn loại website --</option>
+                      <option value="gioi-thieu">
+                        Website giới thiệu công ty
+                      </option>
+                      <option value="ban-hang">
+                        Website bán hàng/E-commerce
+                      </option>
+                      <option value="blog">Blog/Tin tức</option>
+                      <option value="landing">Landing page</option>
+                      <option value="khac">Khác</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Ngân sách dự kiến</label>
+                    <select class="form-select">
+                      <option value="">-- Chọn ngân sách --</option>
+                      <option value="10-20">10-20 triệu</option>
+                      <option value="20-30">20-30 triệu</option>
+                      <option value="30-50">30-50 triệu</option>
+                      <option value="50+">Trên 50 triệu</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Ghi chú thêm</label>
+                    <textarea
+                      class="form-control"
+                      rows="4"
+                      placeholder="Mô tả chi tiết yêu cầu của bạn..."
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-lg w-100 fw-bold"
+                    >
+                      Gửi Yêu Cầu Tư Vấn
+                    </button>
+                    <p class="text-center text-muted small mt-3 mb-0">
+                      Thông tin của bạn được bảo mật tuyệt đối
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <h5>WebPro</h5>
+            <p style="color: var(--text-muted)">
+              Giải pháp thiết kế website chuyên nghiệp cho doanh nghiệp Việt Nam
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5>Dịch Vụ</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="home.html#services">Thiết kế website</a>
+              </li>
+              <li class="mb-2">
+                <a href="home.html#services">Phát triển ứng dụng</a>
+              </li>
+              <li class="mb-2"><a href="home.html#services">Dịch vụ SEO</a></li>
+              <li class="mb-2">
+                <a href="home.html#services">Digital Marketing</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5>Về Chúng Tôi</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="home.html">Giới thiệu</a></li>
+              <li class="mb-2"><a href="home.html#portfolio">Portfolio</a></li>
+              <li class="mb-2"><a href="home.html">Blog</a></li>
+              <li class="mb-2"><a href="register.html">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5>Liên Hệ</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">123 Đường ABC, Quận 1, TP.HCM</li>
+              <li class="mb-2">0901 234 567</li>
+              <li class="mb-2">contact@webpro.vn</li>
+              <li class="mb-2">8:00 - 18:00 (T2-T7)</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4" style="border-color: var(--card-border-dark)" />
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-2" style="color: var(--text-muted)">
+              &copy; 2024 WebPro. All rights reserved.
+            </p>
+            <p class="small" style="color: var(--text-muted)">
+              Giấy phép kinh doanh số: 0123456789 do Sở KH&ĐT TP.HCM cấp
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" style="color: var(--text-muted)" class="me-3"
+              >Chính sách bảo mật</a
+            >
+            <a href="#" style="color: var(--text-muted)">Điều khoản sử dụng</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">↑</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="WebPro.js"></script>
+  </body>
+</html>
