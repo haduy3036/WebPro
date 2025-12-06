@@ -549,7 +549,7 @@
     list-style: none;
     padding: 0;
     margin: 2rem 0;
-    text-align: left;
+    text-align: center;
 }
 .pricing-card ul li,
 .feature-list li {
@@ -560,7 +560,7 @@
 }
 .pricing-card ul li::before,
 .feature-list li::before {
-    content: '✓';
+    content: '';
     position: absolute;
     left: 0;
     color: var(--primary-color);
