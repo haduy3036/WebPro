@@ -687,16 +687,138 @@
 
 /* Responsive for mobile */
 @media (max-width: 768px) {
+    /* Hero Section */
+    .hero-section {
+        padding: 60px 0;
+    }
+    .hero-section h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    .hero-section p {
+        font-size: 1rem;
+    }
+    .hero-section .btn {
+        padding: 0.6rem 2rem !important;
+        font-size: 0.95rem;
+    }
+    
+    /* Stats Box */
+    .stats-box {
+        padding: 1.5rem 1rem;
+        margin-bottom: 1rem;
+    }
+    .stats-number {
+        font-size: 2rem;
+    }
+    
+    /* Benefit Items */
+    .benefit-item {
+        padding: 1.2rem;
+        gap: 1rem;
+    }
+    .benefit-icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 1rem;
+    }
+    .benefit-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    /* Process Step */
+    .process-step {
+        padding-left: 70px;
+        margin-bottom: 2rem;
+    }
+    .process-number {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    /* Pricing Cards */
+    .pricing-card {
+        margin-bottom: 1.5rem;
+    }
+    .pricing-card h3 {
+        font-size: 1.3rem;
+    }
+    .pricing-card .price {
+        font-size: 1.8rem;
+    }
+    
+    /* Testimonial */
+    .testimonial-card {
+        margin-bottom: 1rem;
+    }
+    .testimonial-card .testimonial-avatar {
+        width: 60px;
+        height: 60px;
+    }
+    
+    /* Floating Contact Buttons */
     .floating-contact-buttons {
         bottom: 20px;
         right: 20px;
+        gap: 12px;
     }
     .contact-btn {
         width: 55px;
         height: 55px;
         font-size: 1.3rem;
     }
+    .zalo-btn {
+        font-size: 0.85rem;
+    }
+    
+    /* Social Icons */
     .social-icons {
         justify-content: center;
+    }
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    /* Section Title */
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+    .hero-section p {
+        font-size: 0.95rem;
+    }
+    .stats-box {
+        padding: 1rem 0.75rem;
+    }
+    .stats-number {
+        font-size: 1.5rem;
+    }
+    .pricing-card {
+        padding: 1.5rem 1rem;
+    }
+    .pricing-card .price {
+        font-size: 1.5rem;
+    }
+    .contact-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.1rem;
+    }
+    .zalo-btn {
+        font-size: 0.75rem;
+    }
+    .floating-contact-buttons {
+        bottom: 15px;
+        right: 15px;
+        gap: 10px;
     }
 }
