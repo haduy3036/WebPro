@@ -557,6 +557,7 @@
     color: var(--text-secondary);
     border-bottom: 1px solid var(--card-border-light);
     position: relative;
+}
 .pricing-card ul li::before,
 .feature-list li::before {
     content: '✓';
@@ -573,4 +574,129 @@
 .pricing-card .btn {
     margin-top: 1.5rem;
     width: 100%;
+}
+
+/* Social Media Icons in Footer */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+.social-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.social-icon.facebook {
+    background: linear-gradient(135deg, #1877F2 0%, #0A66C2 100%);
+}
+.social-icon.facebook:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(24, 119, 242, 0.4);
+}
+.social-icon.zalo {
+    background: linear-gradient(135deg, #0084FF 0%, #006AFF 100%);
+}
+.social-icon.zalo:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 132, 255, 0.4);
+}
+.social-icon.phone {
+    background: linear-gradient(135deg, #34C759 0%, #00B340 100%);
+}
+.social-icon.phone:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(52, 199, 89, 0.4);
+}
+
+/* Floating Contact Buttons */
+.floating-contact-buttons {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    animation: slideInRight 0.5s ease-out forwards;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+.contact-btn:nth-child(1) { animation-delay: 0.1s; }
+.contact-btn:nth-child(2) { animation-delay: 0.2s; }
+.contact-btn:nth-child(3) { animation-delay: 0.3s; }
+.contact-btn:hover {
+    transform: scale(1.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+.phone-btn {
+    background: linear-gradient(135deg, #34C759 0%, #00B340 100%);
+}
+.phone-btn:hover {
+    box-shadow: 0 8px 25px rgba(52, 199, 89, 0.5);
+}
+.zalo-btn {
+    background: linear-gradient(135deg, #0084FF 0%, #006AFF 100%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.zalo-btn:hover {
+    box-shadow: 0 8px 25px rgba(0, 132, 255, 0.5);
+}
+.fb-btn {
+    background: linear-gradient(135deg, #1877F2 0%, #0A66C2 100%);
+}
+.fb-btn:hover {
+    box-shadow: 0 8px 25px rgba(24, 119, 242, 0.5);
+}
+
+/* Animation for floating buttons */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .floating-contact-buttons {
+        bottom: 20px;
+        right: 20px;
+    }
+    .contact-btn {
+        width: 55px;
+        height: 55px;
+        font-size: 1.3rem;
+    }
+    .social-icons {
+        justify-content: center;
+    }
 }
